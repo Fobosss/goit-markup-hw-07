@@ -35,7 +35,7 @@ body {
 }
 
 .icon-back {
-    width: 264px;
+    width: 100%;
     height: 112px;
     background-color: #f4f4fd;
 
@@ -867,8 +867,8 @@ line-height: 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
    resize: none;
-   padding-left: 16px;
-   padding-top: 8px;
+   padding: 16px;
+   
    outline: transparent;
    transition-property: border;
    transition-duration: 250ms;
@@ -1106,7 +1106,7 @@ padding-left: 24px;
     .social-container{
         margin: 0;
         text-align: center;
-        margin-bottom: 72px;
+        
     }
     .social-list {
         align-items: center;
@@ -1192,7 +1192,9 @@ line-height: 40px;
         width: 480px;
         margin: 0 auto;
     }
-    
+    .logo-social-container {
+        margin-bottom: 72px;
+    }
 }
    
 
@@ -1241,9 +1243,8 @@ line-height: 16px;
     .team-card-list {
         display: flex;
         flex-wrap: wrap;
-        padding-left: 100px;
-        padding-right: 100px;
-        
+        width: 536px;
+        margin: 0 auto;
     }
     .team-list-item {
         
@@ -1264,8 +1265,8 @@ line-height: 16px;
     .customers-icons {
         flex-wrap: wrap;
         gap: 0; 
-        padding-left: 93px;
-        padding-right: 93px;
+        width: 552px;
+    margin: 0 auto;
     }
     .customers-icons .item {
          width: calc((100% - 48px) / 3);
@@ -1394,13 +1395,14 @@ line-height: 24px;
    .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/mobile.jpg);
     background-size: cover;
-    
+    height: 432px;
 }
 
    @media (min-resolution : 2dppx) {
      .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/mobile2x.jpg);
       background-size: cover;
+      height: 432px;
      }
     
     }
@@ -1410,11 +1412,13 @@ line-height: 24px;
    .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/tablet.jpg);
      background-size: cover;  
+     height: 436px;
 }
 
    @media (min-resolution : 2dppx) {
      .hero { background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/tablet2x.jpg);
-       background-size: cover;}
+       background-size: cover;
+    height: 436px;}
     
     }
 }
@@ -1439,7 +1443,10 @@ line-height: 24px;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .menu-container.is-open {
-    display: block;
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .menu-nav-list .item {
@@ -1451,7 +1458,7 @@ line-height: 24px;
 
 .menu-adress-list {
     max-width: 340px;
-margin-top: 284px;
+margin-top: auto;
 margin-left: auto;
     margin-right: auto;
 }
@@ -1501,8 +1508,7 @@ line-height: 24px;
     display: flex;
     justify-content: space-between;
     margin-top: 48px;
-    margin-left: auto;
-    margin-right: auto;
+    
 }
 .menu-team-icons a {
 
