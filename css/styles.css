@@ -1459,13 +1459,11 @@ line-height: 24px;
 .menu-adress-list {
     max-width: 340px;
 margin-top: auto;
-margin-left: auto;
-    margin-right: auto;
+
 }
 .menu-nav-list {
     width: 340px;
-    margin-left: auto;
-    margin-right: auto;
+    
 }
 .menu-adress-list .item:last-child{
     margin-top: 40px;
